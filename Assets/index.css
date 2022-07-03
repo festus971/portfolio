@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+font-family: 'Lato', sans-serif;
+}
+
+/* Navigation */
+ #navbar .container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+}
+
+
+nav{
+    margin: 40px 40px 40px 30px;
+   
+}
+
+
+.logo{
+    color: blue;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+
+}
+@media only screen and (max-width: 700px){
+    .logo{
+        
+     font-size: 20px;
+    }}
+
+
+
+.nav-item li{
+    display: inline;
+    text-decoration: none;
+ 
+}
+.nav-item> li a{
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 20px;
+    font-weight: bold;
+}
+@media only screen and (max-width: 700px){
+    #navbar .nav-item li a{
+        
+padding: 1px;
+font-size: 13px;
+margin-top: 500px;
+font-weight: bold;
+      
+    }}
+
+
+
+.sticky{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: white;
+}
+
+/* home */
+#home{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+
+}
+@media only screen and (max-width: 700px){
+    #home{
+        
+       flex-direction: column;
+       margin-top: 0px;
+      
+    }}
+
+
+#home .home-body{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    font-size: 18px;
+    margin-right: 60px;
+}
+@media only screen and (max-width: 700px){
+    #home .home-body{
+        font-size: 10px;
+       margin-left: 20px;
+       margin-top: 20px;
+       width: 92%;
+      
+    }}
+
+h3{
+    color: blue;
+    font-size: 28px;
+    padding-bottom: 10px;
+} 
+@media only screen and (max-width: 700px){
+    #home h3{
+        font-size: 25px;
+      
+    }}
+
+
+h1{
+    font-size: 48px;
+}
+@media only screen and (max-width: 700px){
+    #home h1{
+        font-size: 40px;
+
+    }}
+
+
+#home .buttons{
+    margin-top: 30px;
+
+}
+ 
+.btn1{
+  background-color: white;
+  border: 2px solid blue ;
+  padding:20px 26px 20px 26px;
+}
+
+@media only screen and (max-width: 700px){
+    #home .btn1{
+        padding:10px 16px 10px 0px; 
+        margin-bottom: 10px;
+      
+    }}
+
+ .btn2{
+    background-color: white;
+    border: 2px solid blue;
+    padding:20px 26px 20px 26px;
+}
+@media only screen and (max-width: 700px){
+    #home .btn2{
+        padding:10px 16px 10px 0px; 
+      
+    }}
+
+#home .buttons a{
+    text-decoration: none;
+    font-size: 20px;
+    color: blue;
+  
+}
+
+
+.image1{
+    margin-right: 80px;
+}
+
+@media only screen and (max-width: 700px){
+    #home .image1{
+        
+     width: 100%;
+    
+      margin-left: 13px;
+      
+    }}
+/* about */
+
+#about{
+    margin-top: 100px;
+    margin-bottom: 150px;
+}#about .h1{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#about .row{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+width: 100%;
+
+}
+@media only screen and (max-width: 500px){
+    #about .row{
+       flex-direction: column;
+       
+    }}
+
+
+#about .about-image{
+    width: 50%;
+    margin-left: 90px;
+}
+#about .about-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    margin-right:230px;
+    font-size: 20px;
+    padding: 10px;
+   
+}
+@media only screen and (max-width: 500px){
+    #about .about-content{
+
+width: 95%;
+       
+    }}
+
+.about-content h1{
+    padding-bottom: 20px;
+}
+.about-content h3{
+    padding-bottom: 20px;
+}
+.about-buttons{
+    margin-top: 30px;
+    background-color: white;
+}
+
+.about-buttons a{
+    text-decoration: none;
+    color: blue;
+    font-size: 20px;
+}
+
+
+/* SKILLS */
+#skills{
+    margin-top: 100px;
+    margin-bottom: 150px;
+}
+#skills h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.skill{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+@media only screen and (max-width: 700px){
+    .skill{
+        
+       flex-direction: column;
+      
+    }}
+.skill-set{
+    font-size: 20px;
+}
+@media only screen and (max-width: 700px){
+    .skill-set{
+        
+       margin-left: 40px;
+      
+    }}
+.progress{
+    width: 50%;
+}
+@media only screen and (max-width: 500px){
+    .progress{
+     width: 100%;
+     align-items: center;
+     margin-top: 20px;
+     margin-left: 40px;
+     
+       
+    }}
+.progress .container{
+    background-color: gray;
+    border-radius: 20px;
+    align-items: center;
+    width: 80%;
+}
+.html{
+    width: 80%; 
+    background-color: red; 
+    padding: 10px;;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+}
+.css{
+    width: 80%; 
+    background-color: blue; 
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+}
+.js{
+    width: 60%; 
+    background-color: navy; 
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    color: white;  
+    
+}
+.vue{
+    width: 60%; 
+    background-color: black; 
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+}
+.php{
+    width: 60%; 
+    background-color: purple; 
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+}
+
+/* Section Services */
+#services{
+    margin-top: 30px;
+    margin-bottom: 150px;
+}
+#services h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.service{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 50px 50px 50px  50px;
+    align-items: center;
+}
+@media only screen and (max-width: 700px){
+    .service {
+        
+       flex-direction: column;
+       align-items:flex-start;
+       width: 100%;
+   
+    }}
+
+.service .container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 30%;
+    margin-left: 40px;
+    border: 2px solid black;
+    padding: 20px 20px 20px 20px;
+}
+@media only screen and (max-width: 700px){
+    .service  .container{
+        
+       flex-direction: row;
+       padding: 20px 100px 20px 40px;
+       margin-bottom: 20px;
+    }}
+
+/* Contact section */
+#contact{
+    background-color: white;
+}
+#contact  .h1{
+  text-align: center;
+  margin-bottom: 30px;
+}
+ .contacts{
+     display: flex;
+     flex-direction: row;
+     width: 100%;
+     justify-content: space-around;
+     
+ }
+ @media only screen and (max-width: 700px){
+    .contacts{
+        
+       flex-direction: column;
+      
+    }}
+
+ .contacts .body{
+     width: 50%;
+     margin-left: 60px;
+
+ }
+ .contacts .form{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      width:50% ;
+      margin-left: 60px;
+     padding: 20px;
+     margin-right: 50px;
+ }
+ .form input{   
+     width:88%;
+     margin-bottom: 20px;
+     padding: 20px;
+    
+ }
+  textarea{
+      width: 85%;
+      padding: 30px;
+  }
+
+   .contacts button{
+       color: blue;
+       margin-top: 20px;
+   }

@@ -1,0 +1,1 @@
+const btn=document.getElementById("button").addEventListener("click", function(){ alert("Message Submitted succesfuly.!"); });
