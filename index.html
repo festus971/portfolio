@@ -1,164 +1,444 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Assets/index.css">
-    <title>Festus Portforlio</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Festus Kiprop - SRE & Software Engineer in Test building reliable, observable, and resilient systems.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="./Assets/index.css">
+  <title>Festus Kiprop | Portfolio</title>
 </head>
 <body>
-<!-- Navbar -->
 
-<nav id="navbar">
-    <div class="container">
-      <a class="logo"  href="#">Portfolio</a>
-      <div class="lists">
-        <ul class="nav-item">
-          <li >
-            <a href="#home">Home</a>
-          </li>
-          <li>
-            <a href="#about">About</a>
-          </li>
-         
-          <li>
-            <a href="#skills">skills</a>
-          </li>
-          <li>
-            <a href="#services">Service</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-circle">FK</span>
+        <div class="logo-text">
+          <span class="logo-name">Festus Kiprop</span>
+          <span class="logo-role">SRE &amp; SDET</span>
+        </div>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <a href="https://medium.com/@KipropEgo" class="btn-blog" target="_blank" rel="noopener noreferrer">Blog</a>
+        <a href="https://github.com/festus971" target="_blank" rel="noopener noreferrer" class="nav-social" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/festus-kiprop-300169200/" target="_blank" rel="noopener noreferrer" class="nav-social" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <i class="fa-solid fa-bars"></i>
+        </button>
       </div>
     </div>
   </nav>
 
-  <!-- Home Section -->.
-  <section id="home">
-    <div class="home-body">
-        <div class="content">
-          <h3>SOFTWARE ENGINEER</h3>
-          <h1 >I'M Festus <br> Kiprop</h1>
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <div class="hero-left">
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name">Festus Kiprop</h1>
+        <div class="hero-badge">
+          <span id="typewriter">SRE &amp; Software Engineer in Test</span><span class="cursor">|</span>
         </div>
-        <div class="buttons">
-          <button  class="btn1"><a  href="./Assets/images/festus.pdf">Download Resume</a></button>
-           <button class="btn2"><a href="#about">Get To Know Me</a></button>
+        <p class="hero-description">
+          Designing, deploying, and managing reliable systems with observability, automation, and performance engineering. Focused on CI/CD pipelines, quality gates, and resilient infrastructure that scales.
+        </p>
+        <div class="hero-location">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>Nairobi, Kenya</span>
+        </div>
+        <div class="hero-actions">
+          <a href="./Assets/images/festus.pdf" class="btn btn-primary">
+            <i class="fa-solid fa-calendar-days"></i> Download Resume
+          </a>
+          <a href="mailto:festuskiprop2@gmail.com" class="btn btn-outline">
+            <i class="fa-solid fa-envelope"></i> Email Me
+          </a>
+        </div>
+        <div class="hero-connect">
+          <span>Connect:</span>
+          <div class="connect-divider"></div>
+          <a href="https://github.com/festus971" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/festus-kiprop-300169200/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="terminal-window">
+          <div class="terminal-header">
+            <span class="terminal-dot red"></span>
+            <span class="terminal-dot yellow"></span>
+            <span class="terminal-dot green"></span>
+          </div>
+          <div class="terminal-body">
+            <p><span class="prompt">festus@sre~$</span> kubectl get pods --namespace production</p>
+            <p class="output">NAME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;READY&nbsp;&nbsp;STATUS&nbsp;&nbsp;&nbsp;RESTARTS</p>
+            <p class="output">api-server-7d4b8&nbsp;&nbsp;&nbsp;1/1&nbsp;&nbsp;&nbsp;&nbsp;Running&nbsp;&nbsp;0</p>
+            <p class="output">monitoring-5f6a2&nbsp;&nbsp;&nbsp;1/1&nbsp;&nbsp;&nbsp;&nbsp;Running&nbsp;&nbsp;0</p>
+            <p><span class="prompt">festus@sre~$</span> terraform apply -auto-approve</p>
+            <p class="output">Apply complete! Resources: 3 added, 0 changed, 0 destroyed.</p>
+            <p><span class="prompt">festus@sre~$</span> ansible-playbook deploy.yml --limit prod</p>
+            <p class="output">PLAY [production] ****************************</p>
+            <p class="output">TASK [Deploy Application] ********************</p>
+            <p class="output">changed: [prod-server-1]</p>
+            <p class="output">PLAY RECAP ************************************</p>
+            <p class="output">prod-1 : ok=5 changed=2 unreachable=0 failed=0</p>
           </div>
         </div>
-
-        <div class="image1">
-          <img  src="./Assets/images/WhatsApp Image 2022-06-22 at 7.51.04 PM.jpeg" alt="Kiprop" height="500vh" width="100%"></section>
-        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>SCROLL</span>
+      <i class="fa-solid fa-chevron-down"></i>
+    </div>
   </section>
+
   <!-- About Section -->
-  <section id="about">
-    <h1 class="h1">About Me</h1>
-    <hr width="85%" style="margin-left: 100px;">
-    <div class="row">
-      <div class="about-image">
-        <img src="./Assets/images/download.jpeg" alt="Festus image" width="60%" height="400vh">
-      </div>
-      <div class="about-content">
-        <h1 >Festus Kiprop</h1>
-        <h3>SOFTWARE ENGINEER</h3>
-        <p class="lead mb-4">Hello! My name is Festus Kiprop, and I am a software engineer based in Kenya with over 3 months Experince. 
-         I enjoy developing applications for a wide range of clients depending on their needs, and I find joy in solving problems.
-         </p>
-          <div class="about-buttons">
-            <button  class="btn1"> <a class href="#contact">Hire Me</a></button>
-            <button  class="btn2" > <a class href="#contact">Contact Me</a></button>
-         </div>
-      </div>
-    </div>
-  </section>
-  <!-- Skills section -->
-  <section id="skills">
-    <h1 class="h1">My Skills</h1>
-    <hr width="85%" style="margin-left: 100px;">
-    <div class="skill">
-    <div class="skill-set">
-      <h2 >Skills & Experience</h2>
-      <p class="lead ">
-        My skill set includes:
-        </p>
-        <p>HTML</p>
-        <p>CSS</p>
-        <p>JavaScript</p>
-        <p>React.js</p>
-        
-    </div>
-    <div class="progress">
-      <p>HTML</p>
-      <div class="container">
-        <div class="html">80%</div>
-    </div>
-  
-    <p>CSS</p>
-    <div class="container">
-        <div class="css">80%</div>
-    </div>
-    <p>JavaScript</p>
-    <div class="container">
-        <div class="js">60%</div> 
-    </div>
-    <p>React</p>
-    <div class="container">
-      <div class="React">60%</div> 
-  </div>
-    </div>
-    </div>
-  </section>
-  <!-- Section services -->
-  <section id="services">
-    <h1 class="h1">Services</h1>
-    <hr width="85%" style="margin-left: 100px;">
-    <div class="service">
-    <div class="container">
-        <div class="service-img">
-          <img src="./Assets/images/frontend.jpeg" alt="FrontEnd" width="100%" height="200vh">
-        </div>
-        <div class="service-body">
-          <h3>FrontEnd Development</h3>
-          <p class="card-text">I specialize in application written in JavaScript. My current skills in frontend,include, good 
-             sense of design</p>
-            </div>
-          </div>
-        </div>
-  </section>
-  <!-- Contact Section -->
-  <section id="contact">
-    <h1 class="h1">Contacts</h1>
-    <hr width="85%" style="margin-left: 100px;">
-    <div class="contacts">
-      <div class="body">
-         <h1 class=" mb-4">Get In Touch</h1>
-         <p class="lead mb-4"> For any inquiries plus gigs. kindly reach me through my email at 
-          festuskiprop2@gmail.com or Via my twitter handle @arapkimaiyo.
-        </p>
+  <section class="section" id="about">
+    <h2 class="section-title">About</h2>
 
+    <div class="stats-row">
+      <div class="stat-card">
+        <span class="stat-number">3+</span>
+        <span class="stat-label">Years Experience</span>
       </div>
-      <div class="form">
-        <form action="">
-          <div>
-            <h1>Message Me</h1>
-            <label>Your name</label>
-            <input type="text"  placeholder="Client Name.">
-          </div>
-          <div>
-            <label >Email address</label>
-            <input type="email" placeholder="name@example.com">
-          </div>
-          <div class="mb-3">
-            <label >Enter your message</label>
-            <textarea rows="3"></textarea>
-          </div>
-         <button id="button" type="submit" class="btn1">Send Message</button>
-         </form>
+      <div class="stat-card">
+        <span class="stat-number">15+</span>
+        <span class="stat-label">Projects Delivered</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number">5+</span>
+        <span class="stat-label">Certifications</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number">100%</span>
+        <span class="stat-label">Uptime Focus</span>
+      </div>
+    </div>
+
+    <div class="about-cards">
+      <div class="about-card">
+        <h3><i class="fa-solid fa-gear"></i> What I Do</h3>
+        <ul class="about-list">
+          <li><i class="fa-solid fa-code"></i> Build and maintain CI/CD pipelines (Jenkins, GitLab CI, GitHub Actions)</li>
+          <li><i class="fa-solid fa-rocket"></i> Design automated testing frameworks with Selenium and k6</li>
+          <li><i class="fa-solid fa-server"></i> Implement observability with ELK, Prometheus, and Grafana</li>
+          <li><i class="fa-solid fa-shield-halved"></i> Performance and chaos testing for production resilience</li>
+          <li><i class="fa-solid fa-users"></i> Enable teams to ship faster with reliable DevOps practices</li>
+        </ul>
+      </div>
+      <div class="about-card">
+        <h3><i class="fa-solid fa-lightbulb"></i> My Approach</h3>
+        <p>I believe in <strong>automation first</strong> — reducing manual work, improving consistency, and accelerating delivery through Infrastructure as Code.</p>
+        <p>Every system should be <strong>observable</strong>, <strong>scalable</strong>, and <strong>resilient</strong>. I prioritize monitoring, logging, and proactive incident response.</p>
+        <p>Continuous learning drives my work. Whether it's new tools, best practices, or emerging cloud technologies, I stay current and share knowledge through <a href="https://medium.com/@KipropEgo" target="_blank" rel="noopener noreferrer">technical writing</a> and mentorship.</p>
+      </div>
+    </div>
+
+    <div class="tech-section">
+      <h3><i class="fa-solid fa-code"></i> Core Technologies</h3>
+      <div class="tech-grid">
+        <div class="tech-item"><i class="fa-brands fa-aws"></i><span>AWS</span></div>
+        <div class="tech-item"><i class="fa-solid fa-dharmachakra"></i><span>Kubernetes</span></div>
+        <div class="tech-item"><i class="fa-brands fa-docker"></i><span>Docker</span></div>
+        <div class="tech-item"><i class="fa-solid fa-cubes"></i><span>Terraform</span></div>
+        <div class="tech-item"><i class="fa-solid fa-terminal"></i><span>Ansible</span></div>
+        <div class="tech-item"><i class="fa-brands fa-jenkins"></i><span>Jenkins</span></div>
+        <div class="tech-item"><i class="fa-solid fa-circle-nodes"></i><span>Prometheus</span></div>
+        <div class="tech-item"><i class="fa-solid fa-chart-line"></i><span>Grafana</span></div>
+        <div class="tech-item"><i class="fa-brands fa-github"></i><span>GitHub Actions</span></div>
+        <div class="tech-item"><i class="fa-solid fa-magnifying-glass-chart"></i><span>ELK Stack</span></div>
+        <div class="tech-item"><i class="fa-solid fa-vial"></i><span>Selenium</span></div>
+        <div class="tech-item"><i class="fa-solid fa-bolt"></i><span>k6 / JMeter</span></div>
+      </div>
+    </div>
+
+    <div class="about-cards">
+      <div class="about-card">
+        <h3><i class="fa-solid fa-book-open"></i> Technical Writing</h3>
+        <p>I share insights, tutorials, and lessons learned on <a href="https://medium.com/@KipropEgo" target="_blank" rel="noopener noreferrer">my blog</a>, covering SRE practices, observability, testing workflows, and automation best practices.</p>
+      </div>
+      <div class="about-card">
+        <h3><i class="fa-solid fa-people-group"></i> Mentorship &amp; Community</h3>
+        <p>Passionate about helping others grow in their engineering journey. I mentor aspiring engineers and contribute to knowledge-sharing communities.</p>
       </div>
     </div>
   </section>
- <script src="./Assets/index.js"></script>
+
+  <!-- Experience / Career Journey -->
+  <section class="section" id="experience">
+    <h2 class="section-title">Career Journey</h2>
+    <p class="section-subtitle">From Software Testing to Site Reliability Engineering</p>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <span class="timeline-date">2024 - Now</span>
+          <h3>Site Reliability Engineer | Software Engineer in Test</h3>
+          <div class="timeline-company"><i class="fa-solid fa-building"></i><span>Production Systems</span></div>
+          <div class="timeline-meta">
+            <span><i class="fa-solid fa-location-dot"></i> Nairobi, Kenya</span>
+            <span><i class="fa-solid fa-calendar"></i> June 2024 – Present</span>
+          </div>
+          <ul class="timeline-details">
+            <li>Architecting observability solutions with ELK, Prometheus, and Grafana</li>
+            <li>Building CI/CD pipelines with Jenkins, GitLab CI &amp; GitHub Actions</li>
+            <li>Implementing automated testing frameworks with Selenium and k6</li>
+            <li>Managing infrastructure with Terraform and Kubernetes</li>
+          </ul>
+        </div>
+        <div class="timeline-icon"><i class="fa-solid fa-briefcase"></i></div>
+        <div class="timeline-line"></div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <span class="timeline-date">2022 - 2024</span>
+          <h3>Quality Assurance &amp; Test Automation Engineer</h3>
+          <div class="timeline-company"><i class="fa-solid fa-building"></i><span>Software Development</span></div>
+          <div class="timeline-meta">
+            <span><i class="fa-solid fa-location-dot"></i> Nairobi, Kenya</span>
+            <span><i class="fa-solid fa-calendar"></i> 2022 – 2024</span>
+          </div>
+          <ul class="timeline-details">
+            <li>Developed and maintained automated test suites using Selenium WebDriver</li>
+            <li>Reduced test cycle time by 50% through strategic automation</li>
+            <li>Implemented performance testing with k6 and JMeter</li>
+            <li>Integrated quality gates into CI/CD pipelines</li>
+          </ul>
+        </div>
+        <div class="timeline-icon"><i class="fa-solid fa-briefcase"></i></div>
+        <div class="timeline-line"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section class="section" id="education">
+    <h2 class="section-title">Education</h2>
+    <div class="education-grid">
+      <div class="education-card">
+        <div class="edu-logo"><i class="fa-solid fa-graduation-cap"></i></div>
+        <h3>BSc Information Technology</h3>
+        <div class="edu-school"><i class="fa-solid fa-school"></i> Karatina University</div>
+        <span class="edu-date"><i class="fa-solid fa-calendar"></i> 2016 – 2021</span>
+        <div class="edu-divider"></div>
+        <div class="edu-details">
+          <p><strong>Grade:</strong> First Class Honours</p>
+          <p><strong>Focus:</strong> Data Structures, Algorithms and Databases</p>
+        </div>
+      </div>
+      <div class="education-card">
+        <div class="edu-logo"><i class="fa-brands fa-aws"></i></div>
+        <h3>AWS re/Start Programme</h3>
+        <div class="edu-school"><i class="fa-solid fa-school"></i> Ajira Digital</div>
+        <span class="edu-date"><i class="fa-solid fa-calendar"></i> January 2024 – April 2024</span>
+        <div class="edu-divider"></div>
+        <div class="edu-details">
+          <p><strong>Stack:</strong> Linux, Python, Networking, Security, Compute, Storage, and Databases</p>
+          <p><strong>AWS Services:</strong> EC2, S3, RDS, Lambda, VPC, IAM, CloudFormation</p>
+        </div>
+      </div>
+      <div class="education-card">
+        <div class="edu-logo"><i class="fa-solid fa-code"></i></div>
+        <h3>Software Engineering</h3>
+        <div class="edu-school"><i class="fa-solid fa-school"></i> Moringa School</div>
+        <span class="edu-date"><i class="fa-solid fa-calendar"></i> February 2021 – August 2021</span>
+        <div class="edu-divider"></div>
+        <div class="edu-details">
+          <p><strong>Core technologies:</strong> Linux, Python, JavaScript, Databases, Version Control (Git)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section class="section" id="certifications">
+    <h2 class="section-title">Certifications &amp; Credentials</h2>
+    <p class="section-subtitle">Industry-recognized certifications validating expertise in cloud and DevOps technologies</p>
+
+    <div class="cert-stats">
+      <div class="cert-stat"><span class="cert-stat-number">5+</span><span>Certifications</span></div>
+      <div class="cert-stat"><span class="cert-stat-number">5+</span><span>Active</span></div>
+    </div>
+
+    <div class="cert-grid">
+      <div class="cert-card">
+        <div class="cert-badge new">New</div>
+        <div class="cert-icon"><i class="fa-brands fa-aws"></i></div>
+        <h3>AWS Certified Cloud Practitioner</h3>
+        <p class="cert-issuer">Amazon Web Services</p>
+        <p class="cert-date">2024 - 2027</p>
+        <span class="cert-valid"><i class="fa-solid fa-circle-check"></i> Valid</span>
+      </div>
+      <div class="cert-card">
+        <div class="cert-icon"><i class="fa-brands fa-aws"></i></div>
+        <h3>AWS re/Start Graduate</h3>
+        <p class="cert-issuer">Amazon Web Services</p>
+        <p class="cert-date">April 2024 - Lifetime</p>
+        <span class="cert-valid"><i class="fa-solid fa-circle-check"></i> Valid</span>
+      </div>
+      <div class="cert-card">
+        <div class="cert-icon"><i class="fa-solid fa-vial"></i></div>
+        <h3>ISTQB Foundation Level</h3>
+        <p class="cert-issuer">ISTQB</p>
+        <p class="cert-date">2023 - Lifetime</p>
+        <span class="cert-valid"><i class="fa-solid fa-circle-check"></i> Valid</span>
+      </div>
+    </div>
+
+    <div class="skills-section">
+      <h3><i class="fa-solid fa-lightbulb"></i> Core Skills &amp; Tools</h3>
+      <div class="skill-tags">
+        <span>AWS</span><span>Terraform</span><span>Ansible</span><span>Kubernetes</span><span>Docker</span>
+        <span>OpenShift</span><span>Linux</span><span>CI/CD</span><span>GitHub Actions</span><span>GitLab CI</span>
+        <span>Jenkins</span><span>Bash Scripting</span><span>Monitoring &amp; Logging</span><span>Python</span>
+        <span>Selenium</span><span>k6</span><span>JMeter</span><span>Cloud Automation</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section" id="projects">
+    <h2 class="section-title">Projects</h2>
+    <p class="section-subtitle">DevOps &amp; Cloud Infrastructure Projects</p>
+
+    <div class="projects-grid">
+      <article class="project-card">
+        <div class="project-header">
+          <h3>A Quiz Board Template</h3>
+          <span class="project-status">Completed</span>
+        </div>
+        <p>Interactive quiz board built with JavaScript, focusing on clean logic, scoring, and user feedback flows.</p>
+        <div class="project-tags">
+          <span>JavaScript</span><span>HTML</span><span>CSS</span>
+        </div>
+        <div class="project-links">
+          <a href="https://festus971.github.io/A-quiz-Board-template/" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+          <a href="https://github.com/festus971/A-quiz-Board-template" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> Source</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-header">
+          <h3>Cost of Milk</h3>
+          <span class="project-status">Completed</span>
+        </div>
+        <p>Price-focused JavaScript project demonstrating practical UI interactions and user-driven calculations.</p>
+        <div class="project-tags">
+          <span>JavaScript</span><span>HTML</span><span>CSS</span>
+        </div>
+        <div class="project-links">
+          <a href="https://festus971.github.io/Cost-of-milk/" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+          <a href="https://github.com/festus971/Cost-of-milk" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> Source</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-header">
+          <h3>Movers Page</h3>
+          <span class="project-status">Completed</span>
+        </div>
+        <p>Landing page project focused on responsive structure, user navigation, and conversion-oriented content blocks.</p>
+        <div class="project-tags">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span>
+        </div>
+        <div class="project-links">
+          <a href="https://festus971.github.io/Movers-Page/" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+          <a href="https://github.com/festus971/Movers-Page" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> Source</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-header">
+          <h3>Terraform Configurable Web Server</h3>
+          <span class="project-status">Completed</span>
+        </div>
+        <p>Infrastructure as Code project using Terraform to provision and configure scalable web servers on AWS.</p>
+        <div class="project-tags">
+          <span>Terraform</span><span>AWS</span><span>IaC</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/festus971" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> Source</a>
+        </div>
+      </article>
+    </div>
+    <p class="projects-note">More work and contributions: <a href="https://github.com/festus971" target="_blank" rel="noopener noreferrer">github.com/festus971</a></p>
+  </section>
+
+  <!-- Blogs Section -->
+  <section class="section" id="blogs">
+    <h2 class="section-title">Latest Articles</h2>
+    <p class="section-subtitle">I write about SRE, observability, testing, and reliability engineering</p>
+    <div class="blogs-grid" id="blogs-grid">
+      <article class="blog-card blog-skeleton"><div class="skel-thumb"></div><div class="skel-line skel-title"></div><div class="skel-line"></div><div class="skel-line skel-short"></div></article>
+      <article class="blog-card blog-skeleton"><div class="skel-thumb"></div><div class="skel-line skel-title"></div><div class="skel-line"></div><div class="skel-line skel-short"></div></article>
+      <article class="blog-card blog-skeleton"><div class="skel-thumb"></div><div class="skel-line skel-title"></div><div class="skel-line"></div><div class="skel-line skel-short"></div></article>
+    </div>
+    <p class="blogs-note">Follow all my articles: <a href="https://medium.com/@KipropEgo" target="_blank" rel="noopener noreferrer">medium.com/@KipropEgo</a></p>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section contact-section" id="contact">
+    <h2 class="contact-title">Let's Work Together</h2>
+    <p class="contact-subtitle">I'm always open to discussing new projects, opportunities, or partnerships.</p>
+    <div class="contact-response"><i class="fa-solid fa-clock"></i><span>Usually responds within 24 hours</span></div>
+
+    <div class="contact-buttons">
+      <a href="mailto:festuskiprop2@gmail.com" class="btn btn-primary btn-lg"><i class="fa-solid fa-envelope"></i> Send Email</a>
+      <a href="tel:+254713847952" class="btn btn-outline btn-lg"><i class="fa-solid fa-calendar-days"></i> Schedule Call</a>
+    </div>
+
+    <div class="contact-info-grid">
+      <div class="contact-info-card">
+        <i class="fa-solid fa-envelope"></i>
+        <h4>Email</h4>
+        <p>festuskiprop2@gmail.com</p>
+        <button class="copy-btn" onclick="navigator.clipboard.writeText('festuskiprop2@gmail.com')"><i class="fa-regular fa-copy"></i> Click to copy</button>
+      </div>
+      <div class="contact-info-card">
+        <i class="fa-solid fa-location-dot"></i>
+        <h4>Location</h4>
+        <p>Nairobi, Kenya</p>
+      </div>
+      <div class="contact-info-card">
+        <i class="fa-solid fa-phone"></i>
+        <h4>Phone</h4>
+        <p>+254 713 847 952</p>
+        <button class="copy-btn" onclick="navigator.clipboard.writeText('+254713847952')"><i class="fa-regular fa-copy"></i> Click to copy</button>
+      </div>
+    </div>
+
+    <div class="social-section">
+      <div class="social-divider"></div>
+      <h3>Connect on Social Media</h3>
+      <div class="social-links">
+        <a href="https://github.com/festus971" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a>
+        <a href="https://www.linkedin.com/in/festus-kiprop-300169200/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
+        <a href="https://medium.com/@KipropEgo" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-medium"></i> Medium</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-divider"></div>
+    <p>&copy; <span id="year"></span> Festus Kiprop. All rights reserved.</p>
+    <a href="#home" class="back-to-top">Back to Top <i class="fa-solid fa-arrow-up"></i></a>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-top-btn" id="scroll-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <script src="./Assets/index.js"></script>
 </body>
 </html>
