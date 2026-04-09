@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: portfolio-backend
+    runtime: node
+    region: oregon
+    rootDir: portfolio/backend
+    buildCommand: npm install
+    startCommand: node server.js
+    plan: free
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: MONGODB_URI
+        sync: false
+      - key: EMAIL_USER
+        sync: false
+      - key: EMAIL_PASS
+        sync: false
+      - key: FRONTEND_URL
+        sync: false
+      - key: ADMIN_KEY
+        sync: false

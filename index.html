@@ -31,6 +31,9 @@
         <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
       <div class="nav-right">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
         <a href="https://medium.com/@KipropEgo" class="btn-blog" target="_blank" rel="noopener noreferrer">Blog</a>
         <a href="https://github.com/festus971" target="_blank" rel="noopener noreferrer" class="nav-social" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
         <a href="https://www.linkedin.com/in/festus-kiprop-300169200/" target="_blank" rel="noopener noreferrer" class="nav-social" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
@@ -58,12 +61,12 @@
           <span>Nairobi, Kenya</span>
         </div>
         <div class="hero-actions">
-          <a href="./Assets/images/festus.pdf" class="btn btn-primary">
+          <a href="./Assets/images/FestusKiprop.pdf" class="btn btn-primary">
             <i class="fa-solid fa-calendar-days"></i> Download Resume
           </a>
-          <a href="mailto:festuskiprop2@gmail.com" class="btn btn-outline">
+          <button class="btn btn-outline open-contact-modal" type="button">
             <i class="fa-solid fa-envelope"></i> Email Me
-          </a>
+          </button>
         </div>
         <div class="hero-connect">
           <span>Connect:</span>
@@ -79,20 +82,7 @@
             <span class="terminal-dot yellow"></span>
             <span class="terminal-dot green"></span>
           </div>
-          <div class="terminal-body">
-            <p><span class="prompt">festus@sre~$</span> kubectl get pods --namespace production</p>
-            <p class="output">NAME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;READY&nbsp;&nbsp;STATUS&nbsp;&nbsp;&nbsp;RESTARTS</p>
-            <p class="output">api-server-7d4b8&nbsp;&nbsp;&nbsp;1/1&nbsp;&nbsp;&nbsp;&nbsp;Running&nbsp;&nbsp;0</p>
-            <p class="output">monitoring-5f6a2&nbsp;&nbsp;&nbsp;1/1&nbsp;&nbsp;&nbsp;&nbsp;Running&nbsp;&nbsp;0</p>
-            <p><span class="prompt">festus@sre~$</span> terraform apply -auto-approve</p>
-            <p class="output">Apply complete! Resources: 3 added, 0 changed, 0 destroyed.</p>
-            <p><span class="prompt">festus@sre~$</span> ansible-playbook deploy.yml --limit prod</p>
-            <p class="output">PLAY [production] ****************************</p>
-            <p class="output">TASK [Deploy Application] ********************</p>
-            <p class="output">changed: [prod-server-1]</p>
-            <p class="output">PLAY RECAP ************************************</p>
-            <p class="output">prod-1 : ok=5 changed=2 unreachable=0 failed=0</p>
-          </div>
+          <div class="terminal-body" id="terminal-body"></div>
         </div>
       </div>
     </div>
@@ -112,11 +102,11 @@
         <span class="stat-label">Years Experience</span>
       </div>
       <div class="stat-card">
-        <span class="stat-number">15+</span>
+        <span class="stat-number">10+</span>
         <span class="stat-label">Projects Delivered</span>
       </div>
       <div class="stat-card">
-        <span class="stat-number">5+</span>
+        <span class="stat-number">2+</span>
         <span class="stat-label">Certifications</span>
       </div>
       <div class="stat-card">
@@ -151,12 +141,10 @@
         <div class="tech-item"><i class="fa-solid fa-dharmachakra"></i><span>Kubernetes</span></div>
         <div class="tech-item"><i class="fa-brands fa-docker"></i><span>Docker</span></div>
         <div class="tech-item"><i class="fa-solid fa-cubes"></i><span>Terraform</span></div>
-        <div class="tech-item"><i class="fa-solid fa-terminal"></i><span>Ansible</span></div>
         <div class="tech-item"><i class="fa-brands fa-jenkins"></i><span>Jenkins</span></div>
         <div class="tech-item"><i class="fa-solid fa-circle-nodes"></i><span>Prometheus</span></div>
         <div class="tech-item"><i class="fa-solid fa-chart-line"></i><span>Grafana</span></div>
         <div class="tech-item"><i class="fa-brands fa-github"></i><span>GitHub Actions</span></div>
-        <div class="tech-item"><i class="fa-solid fa-magnifying-glass-chart"></i><span>ELK Stack</span></div>
         <div class="tech-item"><i class="fa-solid fa-vial"></i><span>Selenium</span></div>
         <div class="tech-item"><i class="fa-solid fa-bolt"></i><span>k6 / JMeter</span></div>
       </div>
@@ -183,7 +171,7 @@
       <div class="timeline-item">
         <div class="timeline-content">
           <span class="timeline-date">2024 - Now</span>
-          <h3>Site Reliability Engineer | Software Engineer in Test</h3>
+          <h3> Software Engineer in Test | Site Reliability Engineer </h3>
           <div class="timeline-company"><i class="fa-solid fa-building"></i><span>Production Systems</span></div>
           <div class="timeline-meta">
             <span><i class="fa-solid fa-location-dot"></i> Nairobi, Kenya</span>
@@ -228,31 +216,20 @@
     <div class="education-grid">
       <div class="education-card">
         <div class="edu-logo"><i class="fa-solid fa-graduation-cap"></i></div>
-        <h3>BSc Information Technology</h3>
+        <h3>BSc In Applied Statistics With Computing</h3>
         <div class="edu-school"><i class="fa-solid fa-school"></i> Karatina University</div>
         <span class="edu-date"><i class="fa-solid fa-calendar"></i> 2016 – 2021</span>
         <div class="edu-divider"></div>
         <div class="edu-details">
-          <p><strong>Grade:</strong> First Class Honours</p>
-          <p><strong>Focus:</strong> Data Structures, Algorithms and Databases</p>
-        </div>
-      </div>
-      <div class="education-card">
-        <div class="edu-logo"><i class="fa-brands fa-aws"></i></div>
-        <h3>AWS re/Start Programme</h3>
-        <div class="edu-school"><i class="fa-solid fa-school"></i> Ajira Digital</div>
-        <span class="edu-date"><i class="fa-solid fa-calendar"></i> January 2024 – April 2024</span>
-        <div class="edu-divider"></div>
-        <div class="edu-details">
-          <p><strong>Stack:</strong> Linux, Python, Networking, Security, Compute, Storage, and Databases</p>
-          <p><strong>AWS Services:</strong> EC2, S3, RDS, Lambda, VPC, IAM, CloudFormation</p>
+          <p><strong>Grade:</strong> Second Class Honours</p>
+          <p><strong>Focus:</strong> Data Analysis, Statistics</p>
         </div>
       </div>
       <div class="education-card">
         <div class="edu-logo"><i class="fa-solid fa-code"></i></div>
         <h3>Software Engineering</h3>
         <div class="edu-school"><i class="fa-solid fa-school"></i> Moringa School</div>
-        <span class="edu-date"><i class="fa-solid fa-calendar"></i> February 2021 – August 2021</span>
+        <span class="edu-date"><i class="fa-solid fa-calendar"></i> May 2022 – Nov 2022</span>
         <div class="edu-divider"></div>
         <div class="edu-details">
           <p><strong>Core technologies:</strong> Linux, Python, JavaScript, Databases, Version Control (Git)</p>
@@ -267,26 +244,25 @@
     <p class="section-subtitle">Industry-recognized certifications validating expertise in cloud and DevOps technologies</p>
 
     <div class="cert-stats">
-      <div class="cert-stat"><span class="cert-stat-number">5+</span><span>Certifications</span></div>
-      <div class="cert-stat"><span class="cert-stat-number">5+</span><span>Active</span></div>
+      <div class="cert-stat"><span class="cert-stat-number">2+</span><span>Certifications</span></div>
+      <div class="cert-stat"><span class="cert-stat-number">2+</span><span>Active</span></div>
     </div>
 
     <div class="cert-grid">
       <div class="cert-card">
-        <div class="cert-badge new">New</div>
         <div class="cert-icon"><i class="fa-brands fa-aws"></i></div>
-        <h3>AWS Certified Cloud Practitioner</h3>
-        <p class="cert-issuer">Amazon Web Services</p>
-        <p class="cert-date">2024 - 2027</p>
+        <h3>Kubernetes and Cloud Native Associate (KCNA)</h3>
+        <p class="cert-issuer">Linux Foundation</p>
+        <p class="cert-date">2025 - 2027</p>
         <span class="cert-valid"><i class="fa-solid fa-circle-check"></i> Valid</span>
       </div>
-      <div class="cert-card">
+      <!-- <div class="cert-card">
         <div class="cert-icon"><i class="fa-brands fa-aws"></i></div>
         <h3>AWS re/Start Graduate</h3>
         <p class="cert-issuer">Amazon Web Services</p>
         <p class="cert-date">April 2024 - Lifetime</p>
         <span class="cert-valid"><i class="fa-solid fa-circle-check"></i> Valid</span>
-      </div>
+      </div> -->
       <div class="cert-card">
         <div class="cert-icon"><i class="fa-solid fa-vial"></i></div>
         <h3>ISTQB Foundation Level</h3>
@@ -299,7 +275,7 @@
     <div class="skills-section">
       <h3><i class="fa-solid fa-lightbulb"></i> Core Skills &amp; Tools</h3>
       <div class="skill-tags">
-        <span>AWS</span><span>Terraform</span><span>Ansible</span><span>Kubernetes</span><span>Docker</span>
+        <span>AWS</span><span>Terraform</span><span>Kubernetes</span><span>Docker</span>
         <span>OpenShift</span><span>Linux</span><span>CI/CD</span><span>GitHub Actions</span><span>GitLab CI</span>
         <span>Jenkins</span><span>Bash Scripting</span><span>Monitoring &amp; Logging</span><span>Python</span>
         <span>Selenium</span><span>k6</span><span>JMeter</span><span>Cloud Automation</span>
@@ -314,21 +290,17 @@
 
     <div class="projects-grid">
       <article class="project-card">
-        <div class="project-header">
-          <h3>A Quiz Board Template</h3>
-          <span class="project-status">Completed</span>
-        </div>
-        <p>Interactive quiz board built with JavaScript, focusing on clean logic, scoring, and user feedback flows.</p>
+        <p>Configurable Web Server Code.</p>
         <div class="project-tags">
-          <span>JavaScript</span><span>HTML</span><span>CSS</span>
+          <span>hcl</span>
         </div>
         <div class="project-links">
-          <a href="https://festus971.github.io/A-quiz-Board-template/" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
-          <a href="https://github.com/festus971/A-quiz-Board-template" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> Source</a>
+          <a href="https://github.com/festus971/terraform-configurable-web-server" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+          <a href="https://github.com/festus971/terraform-configurable-web-server" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> Source</a>
         </div>
       </article>
 
-      <article class="project-card">
+      <!-- <article class="project-card">
         <div class="project-header">
           <h3>Cost of Milk</h3>
           <span class="project-status">Completed</span>
@@ -341,7 +313,7 @@
           <a href="https://festus971.github.io/Cost-of-milk/" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
           <a href="https://github.com/festus971/Cost-of-milk" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> Source</a>
         </div>
-      </article>
+      </article> -->
 
       <article class="project-card">
         <div class="project-header">
@@ -358,7 +330,7 @@
         </div>
       </article>
 
-      <article class="project-card">
+      <!-- <article class="project-card">
         <div class="project-header">
           <h3>Terraform Configurable Web Server</h3>
           <span class="project-status">Completed</span>
@@ -370,7 +342,7 @@
         <div class="project-links">
           <a href="https://github.com/festus971" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> Source</a>
         </div>
-      </article>
+      </article> -->
     </div>
     <p class="projects-note">More work and contributions: <a href="https://github.com/festus971" target="_blank" rel="noopener noreferrer">github.com/festus971</a></p>
   </section>
@@ -394,7 +366,7 @@
     <div class="contact-response"><i class="fa-solid fa-clock"></i><span>Usually responds within 24 hours</span></div>
 
     <div class="contact-buttons">
-      <a href="mailto:festuskiprop2@gmail.com" class="btn btn-primary btn-lg"><i class="fa-solid fa-envelope"></i> Send Email</a>
+      <button id="open-contact-modal" class="btn btn-primary btn-lg open-contact-modal"><i class="fa-solid fa-envelope"></i> Send Email</button>
       <a href="tel:+254713847952" class="btn btn-outline btn-lg"><i class="fa-solid fa-calendar-days"></i> Schedule Call</a>
     </div>
 
@@ -423,7 +395,7 @@
       <h3>Connect on Social Media</h3>
       <div class="social-links">
         <a href="https://github.com/festus971" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a>
-        <a href="https://www.linkedin.com/in/festus-kiprop-300169200/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
+        <!-- <a href="https://www.linkedin.com/in/festus-kiprop-300169200/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a> -->
         <a href="https://medium.com/@KipropEgo" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-medium"></i> Medium</a>
       </div>
     </div>
@@ -438,6 +410,38 @@
 
   <!-- Scroll to Top Button -->
   <button class="scroll-top-btn" id="scroll-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <!-- Contact Modal -->
+  <div class="modal-overlay" id="contact-modal" aria-hidden="true">
+    <div class="modal">
+      <button class="modal-close" id="modal-close" aria-label="Close form"><i class="fa-solid fa-xmark"></i></button>
+      <form id="contact-form" class="contact-form" novalidate>
+        <h3><i class="fa-solid fa-paper-plane"></i> Send a Message</h3>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input id="name" name="name" type="text" placeholder="John Doe" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input id="email" name="email" type="email" placeholder="john@example.com" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input id="subject" name="subject" type="text" placeholder="How can I help?" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or opportunity..." required></textarea>
+        </div>
+        <button id="submit-btn" class="btn btn-primary btn-lg" type="submit" style="width:100%;justify-content:center;">
+          <i class="fa-solid fa-paper-plane"></i> Send Message
+        </button>
+        <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
 
   <script src="./Assets/index.js"></script>
 </body>
